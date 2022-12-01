@@ -1,0 +1,1063 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06A803AA838302DE045741CF /* Pods_CollegeMessangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D605B042BA56FBBF4FF93EA /* Pods_CollegeMessangerTests.framework */; };
+		1AF17ADEB0E5B06BBDB4FE8C /* Pods_CollegeMessanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B4BA3C705972EA008CF9D6 /* Pods_CollegeMessanger.framework */; };
+		9E20BD772938A05E007FACF8 /* SessionUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20BD762938A05E007FACF8 /* SessionUserDetails.swift */; };
+		9E20BD7D2938A78D007FACF8 /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20BD7C2938A78D007FACF8 /* LoginCredentials.swift */; };
+		9E20BD802938A8FD007FACF8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20BD7F2938A8FD007FACF8 /* AuthViewModel.swift */; };
+		9E23C35629211AFA00CAD657 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23C35529211AFA00CAD657 /* Error.swift */; };
+		9E23C35829212B7F00CAD657 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23C35729212B7F00CAD657 /* SessionService.swift */; };
+		9E23C35A2921966600CAD657 /* TextFieldWithDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23C3592921966600CAD657 /* TextFieldWithDate.swift */; };
+		9E23C35C29219ACA00CAD657 /* DropDownField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E23C35B29219ACA00CAD657 /* DropDownField.swift */; };
+		9E782982291AFDF000967310 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E782981291AFDF000967310 /* XCAssets+Generated.swift */; };
+		9E782984291AFF7D00967310 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E782983291AFF7D00967310 /* Strings+Generated.swift */; };
+		9E88814F291BF8360073C8C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E88814E291BF8360073C8C0 /* GoogleService-Info.plist */; };
+		9E888151291BF84A0073C8C0 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E888150291BF84A0073C8C0 /* FirebaseAuthService.swift */; };
+		9E8BBCDA291D632F0043B8B6 /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8BBCD9291D632F0043B8B6 /* AccentButton.swift */; };
+		9E8E2256290CF8270085C063 /* CollegeMessangerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E2255290CF8270085C063 /* CollegeMessangerApp.swift */; };
+		9E8E2258290CF8270085C063 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E2257290CF8270085C063 /* ContentView.swift */; };
+		9E8E225A290CF8280085C063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8E2259290CF8280085C063 /* Assets.xcassets */; };
+		9E8E225D290CF8280085C063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8E225C290CF8280085C063 /* Preview Assets.xcassets */; };
+		9E8E2267290CF8280085C063 /* CollegeMessangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E2266290CF8280085C063 /* CollegeMessangerTests.swift */; };
+		9E8E2271290CF8280085C063 /* CollegeMessangerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E2270290CF8280085C063 /* CollegeMessangerUITests.swift */; };
+		9E8E2273290CF8280085C063 /* CollegeMessangerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E2272290CF8280085C063 /* CollegeMessangerUITestsLaunchTests.swift */; };
+		9E8E2285290CFC2E0085C063 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8E2284290CFC2E0085C063 /* Colors.xcassets */; };
+		9E8E2292290D0A0E0085C063 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E8E2294290D0A0E0085C063 /* Localizable.strings */; };
+		9E8E229B290D37BA0085C063 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E229A290D37BA0085C063 /* RegistrationView.swift */; };
+		9E8E229F290D37FE0085C063 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E229E290D37FE0085C063 /* RegistrationViewModel.swift */; };
+		9E8E22A4290D38550085C063 /* ApplciationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E22A3290D38550085C063 /* ApplciationAssembly.swift */; };
+		9E8E22A7290D39410085C063 /* RegistrationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E22A6290D39410085C063 /* RegistrationAssembly.swift */; };
+		9EA6830B291FFC7300ACB914 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA6830A291FFC7300ACB914 /* User.swift */; };
+		9EA6830E291FFEDF00ACB914 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA6830D291FFEDF00ACB914 /* FirebaseCollection.swift */; };
+		9EA683122920070100ACB914 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA683112920070100ACB914 /* ServiceAssembly.swift */; };
+		9EA9E20A2917D64800DA577A /* InjectPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9E2092917D64800DA577A /* InjectPropertyWrapper.swift */; };
+		9EA9E20E2917E2F000DA577A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9E20D2917E2F000DA577A /* MainView.swift */; };
+		9EA9E22B2919276600DA577A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9E22A2919276600DA577A /* AuthView.swift */; };
+		D325AA2B9431E984369FB689 /* Pods_CollegeMessanger_CollegeMessangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CADDA58E4BD0241E90BB92 /* Pods_CollegeMessanger_CollegeMessangerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E8E2263290CF8280085C063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E8E224A290CF8270085C063 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E8E2251290CF8270085C063;
+			remoteInfo = CollegeMessanger;
+		};
+		9E8E226D290CF8280085C063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E8E224A290CF8270085C063 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E8E2251290CF8270085C063;
+			remoteInfo = CollegeMessanger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0877ECC44E6BCD2D6932D7E6 /* Pods-CollegeMessanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessanger.debug.xcconfig"; path = "Target Support Files/Pods-CollegeMessanger/Pods-CollegeMessanger.debug.xcconfig"; sourceTree = "<group>"; };
+		0D605B042BA56FBBF4FF93EA /* Pods_CollegeMessangerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollegeMessangerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CADDA58E4BD0241E90BB92 /* Pods_CollegeMessanger_CollegeMessangerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollegeMessanger_CollegeMessangerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		324C0852EF656DE9C974BE70 /* Pods-CollegeMessanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessanger.release.xcconfig"; path = "Target Support Files/Pods-CollegeMessanger/Pods-CollegeMessanger.release.xcconfig"; sourceTree = "<group>"; };
+		6BA349AED05026131ADC4AB4 /* Pods-CollegeMessanger-CollegeMessangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessanger-CollegeMessangerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CollegeMessanger-CollegeMessangerUITests/Pods-CollegeMessanger-CollegeMessangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		96B4BA3C705972EA008CF9D6 /* Pods_CollegeMessanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollegeMessanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E20BD762938A05E007FACF8 /* SessionUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUserDetails.swift; sourceTree = "<group>"; };
+		9E20BD7C2938A78D007FACF8 /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
+		9E20BD7F2938A8FD007FACF8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		9E23C35529211AFA00CAD657 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		9E23C35729212B7F00CAD657 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		9E23C3592921966600CAD657 /* TextFieldWithDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithDate.swift; sourceTree = "<group>"; };
+		9E23C35B29219ACA00CAD657 /* DropDownField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownField.swift; sourceTree = "<group>"; };
+		9E782981291AFDF000967310 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		9E782983291AFF7D00967310 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		9E88814E291BF8360073C8C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E888150291BF84A0073C8C0 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		9E8BBCD9291D632F0043B8B6 /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
+		9E8E2252290CF8270085C063 /* CollegeMessanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeMessanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8E2255290CF8270085C063 /* CollegeMessangerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeMessangerApp.swift; sourceTree = "<group>"; };
+		9E8E2257290CF8270085C063 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9E8E2259290CF8280085C063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E8E225C290CF8280085C063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E8E2262290CF8280085C063 /* CollegeMessangerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeMessangerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8E2266290CF8280085C063 /* CollegeMessangerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeMessangerTests.swift; sourceTree = "<group>"; };
+		9E8E226C290CF8280085C063 /* CollegeMessangerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeMessangerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8E2270290CF8280085C063 /* CollegeMessangerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeMessangerUITests.swift; sourceTree = "<group>"; };
+		9E8E2272290CF8280085C063 /* CollegeMessangerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeMessangerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E8E2284290CFC2E0085C063 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		9E8E228E290D08A40085C063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9E8E2293290D0A0E0085C063 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9E8E2295290D0A280085C063 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9E8E229A290D37BA0085C063 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		9E8E229E290D37FE0085C063 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		9E8E22A3290D38550085C063 /* ApplciationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplciationAssembly.swift; sourceTree = "<group>"; };
+		9E8E22A6290D39410085C063 /* RegistrationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAssembly.swift; sourceTree = "<group>"; };
+		9EA6830A291FFC7300ACB914 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9EA6830D291FFEDF00ACB914 /* FirebaseCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollection.swift; sourceTree = "<group>"; };
+		9EA683112920070100ACB914 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		9EA9E2092917D64800DA577A /* InjectPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectPropertyWrapper.swift; sourceTree = "<group>"; };
+		9EA9E20D2917E2F000DA577A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9EA9E22A2919276600DA577A /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		C1BBA09710278DDBFA9885C2 /* Pods-CollegeMessanger-CollegeMessangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessanger-CollegeMessangerUITests.release.xcconfig"; path = "Target Support Files/Pods-CollegeMessanger-CollegeMessangerUITests/Pods-CollegeMessanger-CollegeMessangerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1A97BFEF66966F3ED04D782 /* Pods-CollegeMessangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessangerTests.debug.xcconfig"; path = "Target Support Files/Pods-CollegeMessangerTests/Pods-CollegeMessangerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDF4A2AC0D2F14529A00B712 /* Pods-CollegeMessangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessangerTests.release.xcconfig"; path = "Target Support Files/Pods-CollegeMessangerTests/Pods-CollegeMessangerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E8E224F290CF8270085C063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF17ADEB0E5B06BBDB4FE8C /* Pods_CollegeMessanger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8E225F290CF8280085C063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A803AA838302DE045741CF /* Pods_CollegeMessangerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8E2269290CF8280085C063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D325AA2B9431E984369FB689 /* Pods_CollegeMessanger_CollegeMessangerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		815870D5BB3F23DE82632F9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96B4BA3C705972EA008CF9D6 /* Pods_CollegeMessanger.framework */,
+				17CADDA58E4BD0241E90BB92 /* Pods_CollegeMessanger_CollegeMessangerUITests.framework */,
+				0D605B042BA56FBBF4FF93EA /* Pods_CollegeMessangerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E20BD7E2938A8E3007FACF8 /* AuthViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9E20BD7F2938A8FD007FACF8 /* AuthViewModel.swift */,
+			);
+			path = AuthViewModel;
+			sourceTree = "<group>";
+		};
+		9E88814D291BF68C0073C8C0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9E888150291BF84A0073C8C0 /* FirebaseAuthService.swift */,
+				9E23C35729212B7F00CAD657 /* SessionService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9E8BBCD8291D63200043B8B6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9EA68309291FFC6300ACB914 /* Models */,
+				9EA68308291FFC5A00ACB914 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9E8E2249290CF8270085C063 = {
+			isa = PBXGroup;
+			children = (
+				9E8E2254290CF8270085C063 /* CollegeMessanger */,
+				9E8E2265290CF8280085C063 /* CollegeMessangerTests */,
+				9E8E226F290CF8280085C063 /* CollegeMessangerUITests */,
+				9E8E2253290CF8270085C063 /* Products */,
+				B7139905B83013AD8D4C4343 /* Pods */,
+				815870D5BB3F23DE82632F9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9E8E2253290CF8270085C063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E2252290CF8270085C063 /* CollegeMessanger.app */,
+				9E8E2262290CF8280085C063 /* CollegeMessangerTests.xctest */,
+				9E8E226C290CF8280085C063 /* CollegeMessangerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E8E2254290CF8270085C063 /* CollegeMessanger */ = {
+			isa = PBXGroup;
+			children = (
+				9E88814E291BF8360073C8C0 /* GoogleService-Info.plist */,
+				9E8E228E290D08A40085C063 /* Info.plist */,
+				9EA9E2062917CE2500DA577A /* CoreLayer */,
+				9E8E22A1290D38330085C063 /* AppicationLayer */,
+				9E8E2298290D0F4A0085C063 /* PresentationLayer */,
+				9E8E2281290CFBBA0085C063 /* Resources */,
+				9E8E2255290CF8270085C063 /* CollegeMessangerApp.swift */,
+				9E8E2257290CF8270085C063 /* ContentView.swift */,
+				9E8E225B290CF8280085C063 /* Preview Content */,
+			);
+			path = CollegeMessanger;
+			sourceTree = "<group>";
+		};
+		9E8E225B290CF8280085C063 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E225C290CF8280085C063 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E8E2265290CF8280085C063 /* CollegeMessangerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E2266290CF8280085C063 /* CollegeMessangerTests.swift */,
+			);
+			path = CollegeMessangerTests;
+			sourceTree = "<group>";
+		};
+		9E8E226F290CF8280085C063 /* CollegeMessangerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E2270290CF8280085C063 /* CollegeMessangerUITests.swift */,
+				9E8E2272290CF8280085C063 /* CollegeMessangerUITestsLaunchTests.swift */,
+			);
+			path = CollegeMessangerUITests;
+			sourceTree = "<group>";
+		};
+		9E8E2281290CFBBA0085C063 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E2282290CFBD30085C063 /* Generated */,
+				9E8E228F290D09C50085C063 /* Localizable */,
+				9E8E2284290CFC2E0085C063 /* Colors.xcassets */,
+				9E8E2259290CF8280085C063 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E8E2282290CFBD30085C063 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				9E782983291AFF7D00967310 /* Strings+Generated.swift */,
+				9E782981291AFDF000967310 /* XCAssets+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		9E8E228F290D09C50085C063 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E2294290D0A0E0085C063 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		9E8E2298290D0F4A0085C063 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9E8BBCD8291D63200043B8B6 /* Common */,
+				9EA9E2282919274900DA577A /* Auth */,
+				9EA9E20B2917E27200DA577A /* Main */,
+				9E8E2299290D0F5C0085C063 /* Registration */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		9E8E2299290D0F5C0085C063 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E22A0290D38260085C063 /* Assembly */,
+				9E8E229D290D37D20085C063 /* Models */,
+				9E8E229C290D37C60085C063 /* ViewModel */,
+				9E8E229A290D37BA0085C063 /* RegistrationView.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		9E8E229C290D37C60085C063 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E229E290D37FE0085C063 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9E8E229D290D37D20085C063 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E8E22A0290D38260085C063 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E22A6290D39410085C063 /* RegistrationAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9E8E22A1290D38330085C063 /* AppicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9EA9E2082917D63400DA577A /* DI */,
+				9E8E22A2290D383F0085C063 /* ApplicationAssembly */,
+			);
+			path = AppicationLayer;
+			sourceTree = "<group>";
+		};
+		9E8E22A2290D383F0085C063 /* ApplicationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E22A3290D38550085C063 /* ApplciationAssembly.swift */,
+			);
+			path = ApplicationAssembly;
+			sourceTree = "<group>";
+		};
+		9EA68308291FFC5A00ACB914 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E8BBCD9291D632F0043B8B6 /* AccentButton.swift */,
+				9E23C3592921966600CAD657 /* TextFieldWithDate.swift */,
+				9E23C35B29219ACA00CAD657 /* DropDownField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9EA68309291FFC6300ACB914 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9EA6830C291FFECE00ACB914 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EA6830A291FFC7300ACB914 /* User.swift */,
+				9EA6830D291FFEDF00ACB914 /* FirebaseCollection.swift */,
+				9E23C35529211AFA00CAD657 /* Error.swift */,
+				9E20BD762938A05E007FACF8 /* SessionUserDetails.swift */,
+				9E20BD7C2938A78D007FACF8 /* LoginCredentials.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EA68310292006F400ACB914 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				9EA683112920070100ACB914 /* ServiceAssembly.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		9EA9E2062917CE2500DA577A /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9EA68310292006F400ACB914 /* Assemblies */,
+				9EA6830C291FFECE00ACB914 /* Model */,
+				9E88814D291BF68C0073C8C0 /* Service */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		9EA9E2082917D63400DA577A /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				9EA9E2092917D64800DA577A /* InjectPropertyWrapper.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		9EA9E20B2917E27200DA577A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9EA9E20C2917E2E800DA577A /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9EA9E20C2917E2E800DA577A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EA9E20D2917E2F000DA577A /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EA9E2282919274900DA577A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9EA9E2292919275C00DA577A /* View */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9EA9E2292919275C00DA577A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E20BD7E2938A8E3007FACF8 /* AuthViewModel */,
+				9EA9E22A2919276600DA577A /* AuthView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7139905B83013AD8D4C4343 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0877ECC44E6BCD2D6932D7E6 /* Pods-CollegeMessanger.debug.xcconfig */,
+				324C0852EF656DE9C974BE70 /* Pods-CollegeMessanger.release.xcconfig */,
+				6BA349AED05026131ADC4AB4 /* Pods-CollegeMessanger-CollegeMessangerUITests.debug.xcconfig */,
+				C1BBA09710278DDBFA9885C2 /* Pods-CollegeMessanger-CollegeMessangerUITests.release.xcconfig */,
+				D1A97BFEF66966F3ED04D782 /* Pods-CollegeMessangerTests.debug.xcconfig */,
+				DDF4A2AC0D2F14529A00B712 /* Pods-CollegeMessangerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E8E2251290CF8270085C063 /* CollegeMessanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E8E2276290CF8280085C063 /* Build configuration list for PBXNativeTarget "CollegeMessanger" */;
+			buildPhases = (
+				AB97115B89BF3A4058452888 /* [CP] Check Pods Manifest.lock */,
+				9E8E224E290CF8270085C063 /* Sources */,
+				9E8E224F290CF8270085C063 /* Frameworks */,
+				9E8E2250290CF8270085C063 /* Resources */,
+				5AD07B63CEAC146A93B9353B /* [CP] Embed Pods Frameworks */,
+				9EA9E22D29192A0800DA577A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollegeMessanger;
+			productName = CollegeMessanger;
+			productReference = 9E8E2252290CF8270085C063 /* CollegeMessanger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E8E2261290CF8280085C063 /* CollegeMessangerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E8E2279290CF8280085C063 /* Build configuration list for PBXNativeTarget "CollegeMessangerTests" */;
+			buildPhases = (
+				958DA002EFAA225E0702190E /* [CP] Check Pods Manifest.lock */,
+				9E8E225E290CF8280085C063 /* Sources */,
+				9E8E225F290CF8280085C063 /* Frameworks */,
+				9E8E2260290CF8280085C063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E8E2264290CF8280085C063 /* PBXTargetDependency */,
+			);
+			name = CollegeMessangerTests;
+			productName = CollegeMessangerTests;
+			productReference = 9E8E2262290CF8280085C063 /* CollegeMessangerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9E8E226B290CF8280085C063 /* CollegeMessangerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E8E227C290CF8280085C063 /* Build configuration list for PBXNativeTarget "CollegeMessangerUITests" */;
+			buildPhases = (
+				41C725350F8F43AC4CD4FC43 /* [CP] Check Pods Manifest.lock */,
+				9E8E2268290CF8280085C063 /* Sources */,
+				9E8E2269290CF8280085C063 /* Frameworks */,
+				9E8E226A290CF8280085C063 /* Resources */,
+				A88B4271D54FB32C6CF00B09 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E8E226E290CF8280085C063 /* PBXTargetDependency */,
+			);
+			name = CollegeMessangerUITests;
+			productName = CollegeMessangerUITests;
+			productReference = 9E8E226C290CF8280085C063 /* CollegeMessangerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E8E224A290CF8270085C063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9E8E2251290CF8270085C063 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9E8E2261290CF8280085C063 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9E8E2251290CF8270085C063;
+					};
+					9E8E226B290CF8280085C063 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9E8E2251290CF8270085C063;
+					};
+				};
+			};
+			buildConfigurationList = 9E8E224D290CF8270085C063 /* Build configuration list for PBXProject "CollegeMessanger" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 9E8E2249290CF8270085C063;
+			productRefGroup = 9E8E2253290CF8270085C063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E8E2251290CF8270085C063 /* CollegeMessanger */,
+				9E8E2261290CF8280085C063 /* CollegeMessangerTests */,
+				9E8E226B290CF8280085C063 /* CollegeMessangerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E8E2250290CF8270085C063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8E2292290D0A0E0085C063 /* Localizable.strings in Resources */,
+				9E8E225D290CF8280085C063 /* Preview Assets.xcassets in Resources */,
+				9E8E2285290CFC2E0085C063 /* Colors.xcassets in Resources */,
+				9E8E225A290CF8280085C063 /* Assets.xcassets in Resources */,
+				9E88814F291BF8360073C8C0 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8E2260290CF8280085C063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8E226A290CF8280085C063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41C725350F8F43AC4CD4FC43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CollegeMessanger-CollegeMessangerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AD07B63CEAC146A93B9353B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CollegeMessanger/Pods-CollegeMessanger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CollegeMessanger/Pods-CollegeMessanger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CollegeMessanger/Pods-CollegeMessanger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		958DA002EFAA225E0702190E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CollegeMessangerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EA9E22D29192A0800DA577A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+		A88B4271D54FB32C6CF00B09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CollegeMessanger-CollegeMessangerUITests/Pods-CollegeMessanger-CollegeMessangerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CollegeMessanger-CollegeMessangerUITests/Pods-CollegeMessanger-CollegeMessangerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CollegeMessanger-CollegeMessangerUITests/Pods-CollegeMessanger-CollegeMessangerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB97115B89BF3A4058452888 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CollegeMessanger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E8E224E290CF8270085C063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA9E20E2917E2F000DA577A /* MainView.swift in Sources */,
+				9EA683122920070100ACB914 /* ServiceAssembly.swift in Sources */,
+				9E8BBCDA291D632F0043B8B6 /* AccentButton.swift in Sources */,
+				9E8E22A7290D39410085C063 /* RegistrationAssembly.swift in Sources */,
+				9E8E22A4290D38550085C063 /* ApplciationAssembly.swift in Sources */,
+				9E20BD772938A05E007FACF8 /* SessionUserDetails.swift in Sources */,
+				9E8E229F290D37FE0085C063 /* RegistrationViewModel.swift in Sources */,
+				9E23C35829212B7F00CAD657 /* SessionService.swift in Sources */,
+				9E888151291BF84A0073C8C0 /* FirebaseAuthService.swift in Sources */,
+				9EA6830B291FFC7300ACB914 /* User.swift in Sources */,
+				9E23C35A2921966600CAD657 /* TextFieldWithDate.swift in Sources */,
+				9E8E2258290CF8270085C063 /* ContentView.swift in Sources */,
+				9E23C35C29219ACA00CAD657 /* DropDownField.swift in Sources */,
+				9E23C35629211AFA00CAD657 /* Error.swift in Sources */,
+				9E782982291AFDF000967310 /* XCAssets+Generated.swift in Sources */,
+				9EA9E20A2917D64800DA577A /* InjectPropertyWrapper.swift in Sources */,
+				9EA6830E291FFEDF00ACB914 /* FirebaseCollection.swift in Sources */,
+				9E20BD802938A8FD007FACF8 /* AuthViewModel.swift in Sources */,
+				9E8E2256290CF8270085C063 /* CollegeMessangerApp.swift in Sources */,
+				9EA9E22B2919276600DA577A /* AuthView.swift in Sources */,
+				9E8E229B290D37BA0085C063 /* RegistrationView.swift in Sources */,
+				9E20BD7D2938A78D007FACF8 /* LoginCredentials.swift in Sources */,
+				9E782984291AFF7D00967310 /* Strings+Generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8E225E290CF8280085C063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8E2267290CF8280085C063 /* CollegeMessangerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8E2268290CF8280085C063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8E2273290CF8280085C063 /* CollegeMessangerUITestsLaunchTests.swift in Sources */,
+				9E8E2271290CF8280085C063 /* CollegeMessangerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E8E2264290CF8280085C063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E8E2251290CF8270085C063 /* CollegeMessanger */;
+			targetProxy = 9E8E2263290CF8280085C063 /* PBXContainerItemProxy */;
+		};
+		9E8E226E290CF8280085C063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E8E2251290CF8270085C063 /* CollegeMessanger */;
+			targetProxy = 9E8E226D290CF8280085C063 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E8E2294290D0A0E0085C063 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E8E2293290D0A0E0085C063 /* en */,
+				9E8E2295290D0A280085C063 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E8E2274290CF8280085C063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E8E2275290CF8280085C063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E8E2277290CF8280085C063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0877ECC44E6BCD2D6932D7E6 /* Pods-CollegeMessanger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CollegeMessanger/Preview Content\"";
+				DEVELOPMENT_TEAM = R597ZW5RJ9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CollegeMessanger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HazelTanget.CollegeMessanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E8E2278290CF8280085C063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324C0852EF656DE9C974BE70 /* Pods-CollegeMessanger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CollegeMessanger/Preview Content\"";
+				DEVELOPMENT_TEAM = R597ZW5RJ9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CollegeMessanger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HazelTanget.CollegeMessanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9E8E227A290CF8280085C063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1A97BFEF66966F3ED04D782 /* Pods-CollegeMessangerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R597ZW5RJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HazelTanget.CollegeMessangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollegeMessanger.app/CollegeMessanger";
+			};
+			name = Debug;
+		};
+		9E8E227B290CF8280085C063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF4A2AC0D2F14529A00B712 /* Pods-CollegeMessangerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R597ZW5RJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HazelTanget.CollegeMessangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollegeMessanger.app/CollegeMessanger";
+			};
+			name = Release;
+		};
+		9E8E227D290CF8280085C063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BA349AED05026131ADC4AB4 /* Pods-CollegeMessanger-CollegeMessangerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R597ZW5RJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HazelTanget.CollegeMessangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CollegeMessanger;
+			};
+			name = Debug;
+		};
+		9E8E227E290CF8280085C063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1BBA09710278DDBFA9885C2 /* Pods-CollegeMessanger-CollegeMessangerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R597ZW5RJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HazelTanget.CollegeMessangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CollegeMessanger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E8E224D290CF8270085C063 /* Build configuration list for PBXProject "CollegeMessanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E8E2274290CF8280085C063 /* Debug */,
+				9E8E2275290CF8280085C063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E8E2276290CF8280085C063 /* Build configuration list for PBXNativeTarget "CollegeMessanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E8E2277290CF8280085C063 /* Debug */,
+				9E8E2278290CF8280085C063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E8E2279290CF8280085C063 /* Build configuration list for PBXNativeTarget "CollegeMessangerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E8E227A290CF8280085C063 /* Debug */,
+				9E8E227B290CF8280085C063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E8E227C290CF8280085C063 /* Build configuration list for PBXNativeTarget "CollegeMessangerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E8E227D290CF8280085C063 /* Debug */,
+				9E8E227E290CF8280085C063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E8E224A290CF8270085C063 /* Project object */;
+}

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "AGF-l7-AcI_0czHb-_y3Kwmb9dY6CYZeRly-Sb6x9w=s900-c-k-c0xffffffff-no-rj-mo-PhotoRoom (1) 1.svg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

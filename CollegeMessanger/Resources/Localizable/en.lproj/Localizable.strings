@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  CollegeMessanger
+
+  Created by Денис Большачков on 29.10.2022.
+  
+*/
+
+"collegeOfCommunication" = "College of communication";
+
+"main" = "Main";
+"settings" = "Settings";
+"addChat" = "Add chat";
+"registration" = "Registration";
+
+
+//Registration
+"firstName" = "First name";
+"lastName" = "Last name";
+"patronymic" = "Patronymic";
+"birthday" = "Date of birth";
+"group" = "Group";
+"email" = "Email";
+"phone" = "Phone number";
+"login" = "Login";
+"password" = "Password";
+"register" = "Register";
+
+//Authorization
+"email" = "E-mail";
+"login" = "Login";
+"forgotPassword" = "Забыли пароль ?";
+
+"authorization" = "Authorization";
+

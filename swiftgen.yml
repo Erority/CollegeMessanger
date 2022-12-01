@@ -1,0 +1,29 @@
+input_dir: CollegeMessanger/Resources/
+# 2
+output_dir: CollegeMessanger/Resources/Generated/
+
+## XCAssets
+xcassets:
+  inputs:
+    - Assets.xcassets
+    - Colors.xcassets
+  outputs:
+    templateName: swift5
+    # 1
+    params:
+       # 2
+       forceProvidesNamespaces: true
+       # 3
+       forceFileNameEnum: true
+    output: XCAssets+Generated.swift
+
+## Strings
+strings:
+  inputs:
+    - Localizable/ru.lproj
+  outputs:
+    - templateName: structured-swift5
+      params:
+        publicAccess: true
+        enumName: Strings
+      output: Strings+Generated.swift
