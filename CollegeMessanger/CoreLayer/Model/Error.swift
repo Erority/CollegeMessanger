@@ -2,7 +2,7 @@
 //  Error.swift
 //  CollegeMessanger
 //
-//  Created by Денис Большачков on 13.11.2022.
+//  Created by Денис Большачков on 14.11.2022.
 //
 
 import Foundation
@@ -22,3 +22,4 @@ extension FirebaseCustomError: LocalizedError {
         }
     }
 }
+
