@@ -41,6 +41,8 @@
 		9EA9E20E2917E2F000DA577A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9E20D2917E2F000DA577A /* MainView.swift */; };
 		9EA9E22B2919276600DA577A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9E22A2919276600DA577A /* AuthView.swift */; };
 		D325AA2B9431E984369FB689 /* Pods_CollegeMessanger_CollegeMessangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CADDA58E4BD0241E90BB92 /* Pods_CollegeMessanger_CollegeMessangerUITests.framework */; };
+		EF1EBA482949D38E004AE22A /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1EBA472949D38E004AE22A /* PostsService.swift */; };
+		EF1EBA4A2949D3C2004AE22A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1EBA492949D3C2004AE22A /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		C1BBA09710278DDBFA9885C2 /* Pods-CollegeMessanger-CollegeMessangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessanger-CollegeMessangerUITests.release.xcconfig"; path = "Target Support Files/Pods-CollegeMessanger-CollegeMessangerUITests/Pods-CollegeMessanger-CollegeMessangerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D1A97BFEF66966F3ED04D782 /* Pods-CollegeMessangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessangerTests.debug.xcconfig"; path = "Target Support Files/Pods-CollegeMessangerTests/Pods-CollegeMessangerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDF4A2AC0D2F14529A00B712 /* Pods-CollegeMessangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessangerTests.release.xcconfig"; path = "Target Support Files/Pods-CollegeMessangerTests/Pods-CollegeMessangerTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF1EBA472949D38E004AE22A /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
+		EF1EBA492949D3C2004AE22A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 			children = (
 				9E888150291BF84A0073C8C0 /* FirebaseAuthService.swift */,
 				9E23C35729212B7F00CAD657 /* SessionService.swift */,
+				EF1EBA472949D38E004AE22A /* PostsService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 				9E23C35529211AFA00CAD657 /* Error.swift */,
 				9E20BD762938A05E007FACF8 /* SessionUserDetails.swift */,
 				9E20BD7C2938A78D007FACF8 /* LoginCredentials.swift */,
+				EF1EBA492949D3C2004AE22A /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -696,6 +702,7 @@
 				9E8E229F290D37FE0085C063 /* RegistrationViewModel.swift in Sources */,
 				9E23C35829212B7F00CAD657 /* SessionService.swift in Sources */,
 				9E888151291BF84A0073C8C0 /* FirebaseAuthService.swift in Sources */,
+				EF1EBA4A2949D3C2004AE22A /* Post.swift in Sources */,
 				9EA6830B291FFC7300ACB914 /* User.swift in Sources */,
 				9E23C35A2921966600CAD657 /* TextFieldWithDate.swift in Sources */,
 				9E8E2258290CF8270085C063 /* ContentView.swift in Sources */,
@@ -710,6 +717,7 @@
 				9E8E229B290D37BA0085C063 /* RegistrationView.swift in Sources */,
 				9E20BD7D2938A78D007FACF8 /* LoginCredentials.swift in Sources */,
 				9E782984291AFF7D00967310 /* Strings+Generated.swift in Sources */,
+				EF1EBA482949D38E004AE22A /* PostsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

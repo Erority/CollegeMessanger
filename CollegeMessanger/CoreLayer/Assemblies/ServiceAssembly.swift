@@ -14,5 +14,11 @@ class ServiceAssembly: Assembly {
             FirebaseAuthServiceImpl()
         }
         .inObjectScope(.transient)
+        
+        
+        container.register(PostService.self) { r in
+            PostServiceImpl()
+        }
+        .inObjectScope(.transient)
     }
 }
