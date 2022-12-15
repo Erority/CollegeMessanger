@@ -45,16 +45,17 @@ private extension SessionServiceImpl {
                 self.state = user == nil ? .loggedOut : .loggedIn
             })
     }
-
+    
     func handleRefresh(with uid: String) {
         Firestore.firestore().collection(FirebaseCollection.users.rawValue)
             .document(uid)
             .getDocument() { [weak self] snapshot, error in
                 if let error = error {
                     self?.state = .loggedOut
-                    return
+                    return print(error)
                 } else {
                     guard let self = self,
+                          let id = snapshot?.documentID,
                           let value = snapshot?.data(),
                           let firstName = value[UserCodingKeys.firstName.rawValue] as? String,
                           let lastName = value[UserCodingKeys.lastName.rawValue] as? String,
@@ -64,11 +65,13 @@ private extension SessionServiceImpl {
                     else { return }
                     
                     DispatchQueue.main.async {
-                        self.sessionUserDetails = SessionUserDetails(fistName: firstName,
-                                                                lastName: lastName,
-                                                                patronimyc: patronimyc,
-                                                                group: Group(name: group),
-                                                                profilePicture: profilePicture)
+                        self.sessionUserDetails = SessionUserDetails(
+                            id: id,
+                            fistName: firstName,
+                            lastName: lastName,
+                            patronimyc: patronimyc,
+                            group: Group(name: group),
+                            profilePicture: profilePicture)
                     }
                 }
             }

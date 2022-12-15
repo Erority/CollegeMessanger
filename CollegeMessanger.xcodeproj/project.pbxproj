@@ -43,6 +43,7 @@
 		D325AA2B9431E984369FB689 /* Pods_CollegeMessanger_CollegeMessangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CADDA58E4BD0241E90BB92 /* Pods_CollegeMessanger_CollegeMessangerUITests.framework */; };
 		EF1EBA482949D38E004AE22A /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1EBA472949D38E004AE22A /* PostsService.swift */; };
 		EF1EBA4A2949D3C2004AE22A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1EBA492949D3C2004AE22A /* Post.swift */; };
+		EF9A4354294B170A0067D1B0 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A4353294B170A0067D1B0 /* ChatService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		DDF4A2AC0D2F14529A00B712 /* Pods-CollegeMessangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessangerTests.release.xcconfig"; path = "Target Support Files/Pods-CollegeMessangerTests/Pods-CollegeMessangerTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF1EBA472949D38E004AE22A /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
 		EF1EBA492949D3C2004AE22A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EF9A4353294B170A0067D1B0 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				9E888150291BF84A0073C8C0 /* FirebaseAuthService.swift */,
 				9E23C35729212B7F00CAD657 /* SessionService.swift */,
 				EF1EBA472949D38E004AE22A /* PostsService.swift */,
+				EF9A4353294B170A0067D1B0 /* ChatService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 				9E23C35629211AFA00CAD657 /* Error.swift in Sources */,
 				9E782982291AFDF000967310 /* XCAssets+Generated.swift in Sources */,
 				9EA9E20A2917D64800DA577A /* InjectPropertyWrapper.swift in Sources */,
+				EF9A4354294B170A0067D1B0 /* ChatService.swift in Sources */,
 				9EA6830E291FFEDF00ACB914 /* FirebaseCollection.swift in Sources */,
 				9E20BD802938A8FD007FACF8 /* AuthViewModel.swift in Sources */,
 				9E8E2256290CF8270085C063 /* CollegeMessangerApp.swift in Sources */,

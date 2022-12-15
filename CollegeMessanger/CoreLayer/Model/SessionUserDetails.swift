@@ -8,6 +8,7 @@
 import Foundation
 
 struct SessionUserDetails {
+    var id: String?
     var fistName: String?
     var lastName: String?
     var patronimyc: String?

@@ -83,7 +83,9 @@ struct AuthView: View {
             })
             
             Button {
-                
+                ChatServiceImpl().getAllChats { allPosts, error in
+                    print(allPosts)
+                }
             } label: {
                 Text(Strings.forgotPassword)
                     .font(.system(size: 14))

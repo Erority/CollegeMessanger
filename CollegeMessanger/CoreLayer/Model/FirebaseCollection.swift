@@ -10,4 +10,6 @@ import Foundation
 enum FirebaseCollection: String {
     case users = "Users"
     case posts = "Posts"
+    case chats = "Chats"
+    case message = "Messages"
 }

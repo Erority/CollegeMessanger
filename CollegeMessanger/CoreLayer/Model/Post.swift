@@ -7,7 +7,7 @@
 
 import Foundation
 import FirebaseFirestore
-
+ 
 struct PostModel{
     let postAuthorName: String
     let postAuthorUId: String
