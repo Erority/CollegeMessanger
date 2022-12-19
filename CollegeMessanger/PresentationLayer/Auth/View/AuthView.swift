@@ -83,8 +83,8 @@ struct AuthView: View {
             })
             
             Button {
-                ChatServiceImpl().getAllChats { allPosts, error in
-                    print(allPosts)
+                ChatServiceImpl().getMessageForChat(chatID: "h3ZWZpdVWvwovhh3nsJs", messageID: "0efdbc6ee81744b2aa308a0b7aee1109") { message, error in
+                    print(message!)
                 }
             } label: {
                 Text(Strings.forgotPassword)

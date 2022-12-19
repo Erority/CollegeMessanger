@@ -11,8 +11,9 @@ import FirebaseFirestore
 
 
 protocol ChatService {
-    func getAllChats(_ clouser: @escaping (_ allPosts: [CahtModel]?, _ error: Error?) -> ())
+    func getChats(chatID: String, _ clouser: @escaping (_ allChats: CahtModel?, _ error: Error?) -> ())
     func getMessageForChat(chatID: String, _ clouser: @escaping (_ allMessage: [MesagesModel]?, _ error: Error?) -> ())
+    func getMessageForChat(chatID: String, messageID: String, _ clouser: @escaping (_ message: MesagesModel?, _ error: Error?) -> ())
 }
 
 
@@ -24,35 +25,35 @@ class ChatServiceImpl: ChatService {
     @Inject var sesionUserDefualts: FirebaseAuthService!
     
     
-    func getAllChats(_ clouser: @escaping (_ allPosts: [CahtModel]?, _ error: Error?) -> ()) {
-        collectionChats.getDocuments { snapshot, error in
+    func getChats(chatID: String, _ clouser: @escaping (_ chat: CahtModel?, _ error: Error?) -> ()) {
+        collectionChats.document(chatID).getDocument { snapshot, error in
 
             if let error = error {
                 print("Error getting documents: \(error)")
                 clouser(nil, error)
             }else {
-                var allChats: [CahtModel] = []
-
-                for document in snapshot!.documents {
-                    self.getMessageForChat(chatID: document.documentID) { allMessage, error in
-                        
-                        allChats.append(CahtModel(
-                            messages: allMessage,
-                            chatName: document.data()["chat_name"] as? String ?? "",
-                            chatPicture: document.data()["chat_picture"] as? String ?? "",
-                            inChat: document.data()["inChat"] as? [String] ?? [],
-                            notaficationDisabled: document.data()["notifications_disabled"] as? [String] ?? [],
-                            ownerUID: document.data()["owner_uid"] as? String ?? "",
-                            reciverUIDs: document.data()["receiverUIDs"] as? [String] ?? []
-                        ))
-                    }
+                var chat: CahtModel? = nil
+                                
+                self.getMessageForChat(chatID: chatID) { allMessage, error in
+                    
+                    chat = CahtModel(
+                        messages: allMessage,
+                        chatName: snapshot!.data()?["chat_name"] as? String ?? "",
+                        chatPicture: snapshot!.data()?["chat_picture"] as? String ?? "",
+                        inChat: snapshot!.data()?["inChat"] as? [String] ?? [],
+                        notaficationDisabled: snapshot!.data()?["notifications_disabled"] as? [String] ?? [],
+                        ownerUID: snapshot!.data()?["owner_uid"] as? String ?? "",
+                        reciverUIDs: snapshot!.data()?["receiverUIDs"] as? [String] ?? []
+                    )
+                    
+                    clouser(chat, nil)
                 }
-                clouser(allChats, nil)
             }
         }
     }
     
     
+    // Get All messages
     func getMessageForChat(chatID: String, _ clouser: @escaping (_ allMessage: [MesagesModel]?, _ error: Error?) -> ()) {
         Firestore.firestore().collection(FirebaseCollection.chats.rawValue).document(chatID).collection(FirebaseCollection.message.rawValue).getDocuments { snapshot, error in
             if let error = error {
@@ -76,6 +77,34 @@ class ChatServiceImpl: ChatService {
                     ))
                 }
                 clouser(messages, nil)
+            }
+        }
+    }
+    
+    
+    // Get One messages
+    func getMessageForChat(chatID: String, messageID: String, _ clouser: @escaping (_ message: MesagesModel?, _ error: Error?) -> ()) {
+        Firestore.firestore().collection(FirebaseCollection.chats.rawValue).document(chatID).collection(FirebaseCollection.message.rawValue).document(messageID).getDocument { snapshot, error in
+            if let error = error {
+                print("Error getting documents: \(error)")
+                clouser(nil, error)
+            }else {
+                var message: MesagesModel? = nil
+                
+                message = MesagesModel(
+                    isReadBy: snapshot!.data()?["isReadBy"] as? [String] ?? [],
+                    isReadedBy: snapshot!.data()?["isReadedBy"] as? [String] ?? [],
+                    messageFile:  snapshot!.data()?["message_files"] as? [String] ?? [],
+                    messagePictures:  snapshot!.data()?["message_pictures"] as? [String] ?? [],
+                    messageText: snapshot!.data()?["message_text"] as? String ?? "",
+                    messageUID: snapshot!.data()?["message_uid"] as? String ?? "",
+                    sender: snapshot!.data()?["sender"] as? String ?? "",
+                    senderName: snapshot!.data()?["sender_name"] as? String ?? "",
+                    senderPicture: snapshot!.data()?["sender_picture"] as? String ?? "",
+                    timestamp: snapshot!.data()?["timestamp"] as? Timestamp
+                )
+                
+                clouser(message, nil)
             }
         }
     }
