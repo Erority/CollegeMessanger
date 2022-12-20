@@ -14,13 +14,14 @@ protocol ChatService {
     func getChats(chatID: String, _ clouser: @escaping (_ allChats: CahtModel?, _ error: Error?) -> ())
     func getMessageForChat(chatID: String, _ clouser: @escaping (_ allMessage: [MesagesModel]?, _ error: Error?) -> ())
     func getMessageForChat(chatID: String, messageID: String, _ clouser: @escaping (_ message: MesagesModel?, _ error: Error?) -> ())
+    func addMessageDocument(chatID: String, message: MesagesModel,  _ clouser: @escaping (_ messageSended: Bool, _ error: Error?) -> ())
 }
 
 
 class ChatServiceImpl: ChatService {
     
     private let collectionChats = Firestore.firestore().collection(FirebaseCollection.chats.rawValue)
-    private let collectionUsers = Firestore.firestore().collection(FirebaseCollection.chats.rawValue)
+    private let collectionUsers = Firestore.firestore().collection(FirebaseCollection.users.rawValue)
     
     @Inject var sesionUserDefualts: FirebaseAuthService!
     
@@ -55,7 +56,7 @@ class ChatServiceImpl: ChatService {
     
     // Get All messages
     func getMessageForChat(chatID: String, _ clouser: @escaping (_ allMessage: [MesagesModel]?, _ error: Error?) -> ()) {
-        Firestore.firestore().collection(FirebaseCollection.chats.rawValue).document(chatID).collection(FirebaseCollection.message.rawValue).getDocuments { snapshot, error in
+        collectionChats.document(chatID).collection(FirebaseCollection.message.rawValue).getDocuments { snapshot, error in
             if let error = error {
                 print("Error getting documents: \(error)")
                 clouser(nil, error)
@@ -84,7 +85,7 @@ class ChatServiceImpl: ChatService {
     
     // Get One messages
     func getMessageForChat(chatID: String, messageID: String, _ clouser: @escaping (_ message: MesagesModel?, _ error: Error?) -> ()) {
-        Firestore.firestore().collection(FirebaseCollection.chats.rawValue).document(chatID).collection(FirebaseCollection.message.rawValue).document(messageID).getDocument { snapshot, error in
+        collectionChats.document(chatID).collection(FirebaseCollection.message.rawValue).document(messageID).getDocument { snapshot, error in
             if let error = error {
                 print("Error getting documents: \(error)")
                 clouser(nil, error)
@@ -109,30 +110,61 @@ class ChatServiceImpl: ChatService {
         }
     }
     
-}
-
-
-struct CahtModel {
-    var messages: [MesagesModel]?
     
-    var chatName: String?
-    var chatPicture: String?
-    var inChat: [String?]?
-    var notaficationDisabled: [String?]?
-    var ownerUID: String?
-    var reciverUIDs: [String?]?
-
+    func addChatDocument(ownerUserID: String, chat: CahtModel, _ clouser: @escaping (_ success: Bool, _ error: Error?) -> ()){
+        let document = collectionChats.addDocument(data: ["chat_name": chat.chatName ?? "" ,
+                                          "chat_picture": chat.chatPicture ?? "",
+                                          "inChat": chat.inChat ?? [],
+                                          "notifications_disabled": chat.notaficationDisabled ?? [],
+                                          "owner_uid": chat.ownerUID ?? "",
+                                          "receiverUIDs": chat.reciverUIDs ?? []
+                                           ]
+                                    )
+        { error in
+            if error != nil{
+                print(error!)
+                clouser(false, error)
+            }else{
+                clouser(true, nil)
+            }
+        }
+        
+        collectionUsers.document(ownerUserID).getDocument { snapshot, error in
+            if let error = error {
+                print("Error getting documents: \(error)")
+            }else {
+                var userChatIds = (snapshot?.data()?["ChatIDs"] as? [String] ?? [])
+                userChatIds.append(document.documentID)
+                
+                self.collectionUsers.document(ownerUserID).setData(["ChatIDs": userChatIds], merge: true)
+            }
+        }
+        
+    }
+    
+    
+    func addMessageDocument(chatID: String, message: MesagesModel,  _ clouser: @escaping (_ success: Bool, _ error: Error?) -> ()){
+        collectionChats.document(chatID).collection(FirebaseCollection.message.rawValue)
+            .addDocument(data: [
+                "isReadBy": message.isReadBy ?? [],
+                "isReadedBy": message.isReadedBy ?? [] ,
+                "message_files": message.messageFile ?? [],
+                "message_pictures": message.messagePictures ?? [],
+                "message_text": message.messageText ?? "",
+                "message_uid": message.messageUID ?? "",
+                "sender": message.sender ?? "",
+                "sender_name": message.senderName ?? "",
+                "sender_picture": message.senderPicture ?? "",
+                "timestamp": message.timestamp ?? Timestamp()
+            ])
+        { error in
+            if error != nil{
+                print(error!)
+                clouser(false, error)
+            }else{
+                clouser(true, nil)
+            }
+        }
+    }
 }
 
-struct MesagesModel{
-    var isReadBy: [String?]?
-    var isReadedBy: [String?]?
-    var messageFile: [String?]?
-    var messagePictures: [String?]?
-    var messageText: String?
-    var messageUID: String?
-    var sender: String?
-    var senderName: String?
-    var senderPicture: String?
-    var timestamp: Timestamp?
-}

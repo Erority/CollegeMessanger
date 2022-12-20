@@ -18,6 +18,8 @@ struct User {
     var profilePicture: String
     var role: Role
     var group: String
+    var chatIds: [String]?
+    var userPlatform: String?
     
     enum CodingKeys: String, CodingKey {
         case firstName = "FirstName"
@@ -30,6 +32,8 @@ struct User {
         case profilePicture = "ProfilePicture"
         case role = "Role"
         case group = "Group"
+        case chatIds = "ChatIDs"
+        case userPlatform = "UserPlatform"
     }
 }
 
@@ -44,11 +48,12 @@ enum UserCodingKeys: String {
     case profilePicture = "ProfilePicture"
     case role = "Role"
     case group = "Group"
-    case chats = "ChatIDs" 
+    case chats = "ChatIDs"
+    case userPlatform = "UserPlatform"
 }
 
 enum Role: String {
-    case student
+    case student = "student"
 }
 
 struct Group: Identifiable {

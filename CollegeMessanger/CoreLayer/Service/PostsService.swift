@@ -19,7 +19,6 @@ protocol PostService {
 class PostServiceImpl: PostService {
     
     private let collection = Firestore.firestore().collection(FirebaseCollection.posts.rawValue)
-    
     @Inject var sesionUserDefualts: FirebaseAuthService!
     
     func getPost(_ clouser: @escaping (_ allPosts: [PostModel]?, _ error: Error?) -> ()) {
@@ -65,4 +64,6 @@ class PostServiceImpl: PostService {
             }
         }
     }
+    
+
 }

@@ -44,6 +44,8 @@
 		EF1EBA482949D38E004AE22A /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1EBA472949D38E004AE22A /* PostsService.swift */; };
 		EF1EBA4A2949D3C2004AE22A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1EBA492949D3C2004AE22A /* Post.swift */; };
 		EF9A4354294B170A0067D1B0 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A4353294B170A0067D1B0 /* ChatService.swift */; };
+		EFD0B67C29507320009D6C32 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0B67B29507320009D6C32 /* Chat.swift */; };
+		EFD0B67F29507365009D6C32 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0B67E29507365009D6C32 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +113,9 @@
 		DDF4A2AC0D2F14529A00B712 /* Pods-CollegeMessangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeMessangerTests.release.xcconfig"; path = "Target Support Files/Pods-CollegeMessangerTests/Pods-CollegeMessangerTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF1EBA472949D38E004AE22A /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
 		EF1EBA492949D3C2004AE22A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		EF9A4353294B170A0067D1B0 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		EF9A4353294B170A0067D1B0 /* ChatService.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EFD0B67B29507320009D6C32 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		EFD0B67E29507365009D6C32 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +357,7 @@
 		9EA6830C291FFECE00ACB914 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EFD0B67D29507353009D6C32 /* Chat */,
 				9EA6830A291FFC7300ACB914 /* User.swift */,
 				9EA6830D291FFEDF00ACB914 /* FirebaseCollection.swift */,
 				9E23C35529211AFA00CAD657 /* Error.swift */,
@@ -433,6 +438,15 @@
 				DDF4A2AC0D2F14529A00B712 /* Pods-CollegeMessangerTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFD0B67D29507353009D6C32 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0B67B29507320009D6C32 /* Chat.swift */,
+				EFD0B67E29507365009D6C32 /* Message.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -709,6 +723,7 @@
 				9EA6830B291FFC7300ACB914 /* User.swift in Sources */,
 				9E23C35A2921966600CAD657 /* TextFieldWithDate.swift in Sources */,
 				9E8E2258290CF8270085C063 /* ContentView.swift in Sources */,
+				EFD0B67F29507365009D6C32 /* Message.swift in Sources */,
 				9E23C35C29219ACA00CAD657 /* DropDownField.swift in Sources */,
 				9E23C35629211AFA00CAD657 /* Error.swift in Sources */,
 				9E782982291AFDF000967310 /* XCAssets+Generated.swift in Sources */,
@@ -718,6 +733,7 @@
 				9E20BD802938A8FD007FACF8 /* AuthViewModel.swift in Sources */,
 				9E8E2256290CF8270085C063 /* CollegeMessangerApp.swift in Sources */,
 				9EA9E22B2919276600DA577A /* AuthView.swift in Sources */,
+				EFD0B67C29507320009D6C32 /* Chat.swift in Sources */,
 				9E8E229B290D37BA0085C063 /* RegistrationView.swift in Sources */,
 				9E20BD7D2938A78D007FACF8 /* LoginCredentials.swift in Sources */,
 				9E782984291AFF7D00967310 /* Strings+Generated.swift in Sources */,

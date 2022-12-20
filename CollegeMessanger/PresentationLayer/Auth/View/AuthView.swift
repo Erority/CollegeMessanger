@@ -4,7 +4,6 @@
 //
 //  Created by Денис Большачков on 07.11.2022.
 //
-
 import SwiftUI
 
 struct AuthView: View {
@@ -83,9 +82,10 @@ struct AuthView: View {
             })
             
             Button {
-                ChatServiceImpl().getMessageForChat(chatID: "h3ZWZpdVWvwovhh3nsJs", messageID: "0efdbc6ee81744b2aa308a0b7aee1109") { message, error in
-                    print(message!)
-                }
+                //
+                //
+                //
+                
             } label: {
                 Text(Strings.forgotPassword)
                     .font(.system(size: 14))
