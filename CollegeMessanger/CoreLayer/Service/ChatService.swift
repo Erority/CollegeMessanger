@@ -144,7 +144,7 @@ class ChatServiceImpl: ChatService {
     
     
     func addMessageDocument(chatID: String, message: MesagesModel,  _ clouser: @escaping (_ success: Bool, _ error: Error?) -> ()){
-        collectionChats.document(chatID).collection(FirebaseCollection.message.rawValue)
+        var document = collectionChats.document(chatID).collection(FirebaseCollection.message.rawValue)
             .addDocument(data: [
                 "isReadBy": message.isReadBy ?? [],
                 "isReadedBy": message.isReadedBy ?? [] ,
@@ -165,6 +165,10 @@ class ChatServiceImpl: ChatService {
                 clouser(true, nil)
             }
         }
+        
+        let messageDocument = collectionChats.document(chatID).collection(FirebaseCollection.message.rawValue).document(document.documentID)
+        
+        messageDocument.setData(["message_uid" : document.documentID], merge: true)
     }
 }
 
