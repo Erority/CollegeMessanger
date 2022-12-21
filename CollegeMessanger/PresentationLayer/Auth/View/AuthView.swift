@@ -5,6 +5,7 @@
 //  Created by Денис Большачков on 07.11.2022.
 //
 import SwiftUI
+import FirebaseFirestore
 
 struct AuthView: View {
     @State private var goToRegistration = false
@@ -82,9 +83,6 @@ struct AuthView: View {
             })
             
             Button {
-                //
-                //
-                //
                 
             } label: {
                 Text(Strings.forgotPassword)

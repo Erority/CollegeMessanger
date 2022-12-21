@@ -12,4 +12,6 @@ enum FirebaseCollection: String {
     case posts = "Posts"
     case chats = "Chats"
     case message = "Messages"
+    case notifications = "Notifications"
+    case works = "Works"
 }

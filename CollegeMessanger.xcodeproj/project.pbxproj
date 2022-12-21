@@ -46,6 +46,10 @@
 		EF9A4354294B170A0067D1B0 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9A4353294B170A0067D1B0 /* ChatService.swift */; };
 		EFD0B67C29507320009D6C32 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0B67B29507320009D6C32 /* Chat.swift */; };
 		EFD0B67F29507365009D6C32 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0B67E29507365009D6C32 /* Message.swift */; };
+		EFD6FCAC2952FE9E0031CD6D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6FCAB2952FE9E0031CD6D /* NotificationService.swift */; };
+		EFD6FCAE29530C510031CD6D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6FCAD29530C510031CD6D /* Notification.swift */; };
+		EFD6FCB029530EC20031CD6D /* WorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6FCAF29530EC20031CD6D /* WorkService.swift */; };
+		EFD6FCB2295311CC0031CD6D /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6FCB1295311CC0031CD6D /* Work.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +120,10 @@
 		EF9A4353294B170A0067D1B0 /* ChatService.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; tabWidth = 4; };
 		EFD0B67B29507320009D6C32 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		EFD0B67E29507365009D6C32 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EFD6FCAB2952FE9E0031CD6D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		EFD6FCAD29530C510031CD6D /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		EFD6FCAF29530EC20031CD6D /* WorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkService.swift; sourceTree = "<group>"; };
+		EFD6FCB1295311CC0031CD6D /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +179,8 @@
 				9E23C35729212B7F00CAD657 /* SessionService.swift */,
 				EF1EBA472949D38E004AE22A /* PostsService.swift */,
 				EF9A4353294B170A0067D1B0 /* ChatService.swift */,
+				EFD6FCAB2952FE9E0031CD6D /* NotificationService.swift */,
+				EFD6FCAF29530EC20031CD6D /* WorkService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -364,6 +374,8 @@
 				9E20BD762938A05E007FACF8 /* SessionUserDetails.swift */,
 				9E20BD7C2938A78D007FACF8 /* LoginCredentials.swift */,
 				EF1EBA492949D3C2004AE22A /* Post.swift */,
+				EFD6FCAD29530C510031CD6D /* Notification.swift */,
+				EFD6FCB1295311CC0031CD6D /* Work.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -718,6 +730,7 @@
 				9E20BD772938A05E007FACF8 /* SessionUserDetails.swift in Sources */,
 				9E8E229F290D37FE0085C063 /* RegistrationViewModel.swift in Sources */,
 				9E23C35829212B7F00CAD657 /* SessionService.swift in Sources */,
+				EFD6FCB2295311CC0031CD6D /* Work.swift in Sources */,
 				9E888151291BF84A0073C8C0 /* FirebaseAuthService.swift in Sources */,
 				EF1EBA4A2949D3C2004AE22A /* Post.swift in Sources */,
 				9EA6830B291FFC7300ACB914 /* User.swift in Sources */,
@@ -726,6 +739,7 @@
 				EFD0B67F29507365009D6C32 /* Message.swift in Sources */,
 				9E23C35C29219ACA00CAD657 /* DropDownField.swift in Sources */,
 				9E23C35629211AFA00CAD657 /* Error.swift in Sources */,
+				EFD6FCB029530EC20031CD6D /* WorkService.swift in Sources */,
 				9E782982291AFDF000967310 /* XCAssets+Generated.swift in Sources */,
 				9EA9E20A2917D64800DA577A /* InjectPropertyWrapper.swift in Sources */,
 				EF9A4354294B170A0067D1B0 /* ChatService.swift in Sources */,
@@ -735,6 +749,8 @@
 				9EA9E22B2919276600DA577A /* AuthView.swift in Sources */,
 				EFD0B67C29507320009D6C32 /* Chat.swift in Sources */,
 				9E8E229B290D37BA0085C063 /* RegistrationView.swift in Sources */,
+				EFD6FCAC2952FE9E0031CD6D /* NotificationService.swift in Sources */,
+				EFD6FCAE29530C510031CD6D /* Notification.swift in Sources */,
 				9E20BD7D2938A78D007FACF8 /* LoginCredentials.swift in Sources */,
 				9E782984291AFF7D00967310 /* Strings+Generated.swift in Sources */,
 				EF1EBA482949D38E004AE22A /* PostsService.swift in Sources */,

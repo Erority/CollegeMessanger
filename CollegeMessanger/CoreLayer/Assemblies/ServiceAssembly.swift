@@ -20,5 +20,23 @@ class ServiceAssembly: Assembly {
             PostServiceImpl()
         }
         .inObjectScope(.transient)
+        
+        
+        container.register(ChatService.self) { r in
+            ChatServiceImpl()
+        }
+        .inObjectScope(.transient)
+        
+        
+        container.register(NotificationsService.self) { r in
+            NotificationsServiceImpl()
+        }
+        .inObjectScope(.transient)
+        
+        
+        container.register(WorkService.self) { r in
+            WorkServiceImpl()
+        }
+        .inObjectScope(.transient)
     }
 }

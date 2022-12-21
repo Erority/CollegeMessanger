@@ -23,8 +23,6 @@ class ChatServiceImpl: ChatService {
     private let collectionChats = Firestore.firestore().collection(FirebaseCollection.chats.rawValue)
     private let collectionUsers = Firestore.firestore().collection(FirebaseCollection.users.rawValue)
     
-    @Inject var sesionUserDefualts: FirebaseAuthService!
-    
     
     func getChats(chatID: String, _ clouser: @escaping (_ chat: CahtModel?, _ error: Error?) -> ()) {
         collectionChats.document(chatID).getDocument { snapshot, error in
